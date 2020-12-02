@@ -1,0 +1,143 @@
+[
+  {
+    "cardnumber": "6884 2477 9500 8709",
+    "cardtype": "visa",
+    "cardCurrency": "USD",
+    "cardName": "Fash Holmes",
+    "cardAddress": "3b  Parklands Avenue",
+    "ZipCode": 98556,
+    "CVV": 234,
+    "cardbalance": 500,
+    "isActive": true,
+    "ExpiryMonth": "09",
+    "ExpiryYear": "23",
+    "Transactions": [
+      {
+	"Amount": 50,
+        "narration": "Grocery Shopping",
+        "transactiontype": "dr",
+        "TransactionDate": "2020-05-15T03:51:03 -01:00"
+      },
+      {
+	"Amount": 500,
+        "narration": "Transaction Refund Alibaba",
+        "transactiontype": "cr",
+        "TransactionDate": "2020-05-16T05:11:40 -01:00"
+      },
+      {
+	"Amount": 250,
+        "narration": "Flight ticket to Doha",
+        "transactiontype": "dr",
+        "TransactionDate": "2020-06-19T09:54:32 -01:00"
+      },
+ {
+	"Amount": 250,
+        "narration": "Camera Purchase",
+        "transactiontype": "dr",
+        "TransactionDate": "2020-06-19T09:54:32 -01:00"
+      }
+    ]
+  },
+
+ {
+    "cardnumber": "6884 2477 9500 1209",
+    "cardtype": "visa",
+    "cardCurrency": "USD",
+    "cardName": "Fash Holmes",
+    "cardAddress": "3b  Parklands Avenue",
+    "ZipCode": 98556,
+    "CVV": 234,
+    "cardbalance": 50,
+    "isActive": false,
+    "ExpiryMonth": "10",
+    "ExpiryYear": "23",
+    "Transactions": []
+  },
+  {
+   "cardnumber": "6884 2477 9500 8345",
+    "cardtype": "MasterCard",
+    "cardCurrency": "USD",
+    "cardName": "Funso Dan",
+    "cardAddress": "2b Stoke road kingston upon Thames",
+    "ZipCode": 98556,
+    "CVV": 134,
+    "cardbalance": 50,
+    "isActive": true,
+    "ExpiryMonth": "11",
+    "ExpiryYear": "22",
+    "Transactions": [
+      {
+        "Amount": 70,
+        "narration": "Monthly Oyster Card",
+        "transactiontype": "dr",
+        "TransactionDate": "2020-11-15T07:34:09 -01:00"
+      },
+      {
+        "Amount": 50,
+        "narration": "Donation to Cancer Charity",
+        "transactiontype": "dr",
+        "TransactionDate": "2020-10-02T01:03:32 -01:00"
+      },
+      {
+        "Amount": 550,
+        "narration": "Card Funding from bank",
+        "transactiontype": "cr",
+        "TransactionDate": "2020-09-12T12:40:27 -01:00"
+      }
+    ]
+  },
+  {
+    "cardnumber": "6884 2477 9500 8103",
+    "cardtype": "visa",
+    "cardCurrency": "NGN",
+    "cardName": "Tobi Jones",
+    "cardAddress": "2b Stoke road kingston upon Thames",
+    "ZipCode": 98556,
+    "CVV": 134,
+    "cardbalance": 50,
+    "isActive": true,
+    "ExpiryMonth": "11",
+    "ExpiryYear": "22",
+    "Transactions": [
+      {
+        "Amount": 70,
+        "narration": "Monthly Oyster Card",
+        "transactiontype": "dr",
+        "TransactionDate": "2020-11-15T07:34:09 -01:00"
+      },
+      {
+        "Amount": 50,
+        "narration": "Donation to Cancer Charity",
+        "transactiontype": "dr",
+        "TransactionDate": "2020-10-02T01:03:32 -01:00"
+      },
+      {
+        "Amount": 550,
+        "narration": "Card Funding from bank",
+        "transactiontype": "cr",
+        "TransactionDate": "2020-11-12T12:40:27 -01:00"
+      }
+    ]
+  },
+ {
+    "cardnumber": "6884 2477 9500 8790",
+    "cardtype": "mastercard",
+    "cardCurrency": "NGN",
+    "cardName": "Fash Holmes",
+    "cardAddress": "3b  Parklands Avenue",
+    "ZipCode": 98556,
+    "CVV": 234,
+    "cardbalance": 500,
+    "isActive": false,
+    "ExpiryMonth": "09",
+    "ExpiryYear": "23",
+    "Transactions": [
+      {
+	"Amount": 499.99,
+        "narration": "PS5",
+        "transactiontype": "dr",
+        "TransactionDate": "2020-11-16T03:51:03 -01:00"
+      }
+    ]
+  }
+]

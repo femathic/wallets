@@ -1,0 +1,69 @@
+/* index css  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "SF-Compact-Display-Regular";
+    src: local('SF-Compact-Display-Regular'), url("./fonts/SF-Compact-Display-Regular.woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "SF-Compact-Display-Medium";
+    src: local('SF-Compact-Display-Medium'), url("./fonts/SF-Compact-Display-Medium.woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "SF-Compact-Text-Regular";
+    src: local('SF-Compact-Text-Regular'), url("./fonts/SF-Compact-Text-Medium.woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "SF-Compact-Text-Medium";
+    src: local('SF-Compact-Text-Medium'), url("./fonts/SF-Compact-Text-Medium.woff");
+    font-display: swap;
+}
+.scdr {
+  font-family: "SF-Compact-Display-Regular", monospace;
+}
+.scdm {
+  font-family: "SF-Compact-Display-Medium", monospace;
+}
+.sctr {
+  font-family: "SF-Compact-Text-Regular", monospace;
+}
+.sctm {
+  font-family: "SF-Compact-Text-Medium", monospace;
+}
+.ipm {
+  font-family: 'IBM Plex Mono', monospace;
+}
+.ips {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+body {
+  position:relative;
+  padding: 0;
+  margin: 0;
+  font-family: "SF Compact Text", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 100
+}
+.themeShadow {
+  box-shadow:  0px 6px 20px rgba(0, 0, 0, 0.1)
+}
+.themeRadius {
+  border-radius: 8px 
+}
+.loader {
+  border-top-color: #5C2799;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+@-webkit-keyframes spinner {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
