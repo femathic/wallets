@@ -1,9 +1,11 @@
 import React from 'react';
 import moment from 'moment';
 import numeral from 'numeral';
+import { motion } from 'framer-motion';
+import { item } from '../styles/motion';
 
 const TransactionTable = ({ transactions }:{ transactions: Array<null|any>}) => (
-  <div className="col-span-12 bg-white w-full border border-opacity-5 mt-10 themeShadow themeRadius px-4 xl:px-10 pt-10 pb-6 text-themeBlack">
+  <motion.div variants={item} className="col-span-12 bg-white w-full border border-opacity-5 mt-10 themeShadow themeRadius px-4 xl:px-10 pt-10 pb-6 text-themeBlack">
     <div className="flex justify-between">
       <p className="text-themePurple">Recent Transactions</p>
       <p className="text-sm text-themeBlack">View More</p>
@@ -51,7 +53,7 @@ const TransactionTable = ({ transactions }:{ transactions: Array<null|any>}) => 
       </tbody>
     </table>
 
-  </div>
+  </motion.div>
 );
 
 export default TransactionTable;

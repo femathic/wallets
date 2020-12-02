@@ -1,7 +1,9 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { item } from '../styles/motion';
 
 const CardsHeading = () => (
-  <>
+  <motion.div variants={item}>
     <div className="flex flex-wrap justify-between items-center flex-nowrap mt-6 mb-8 md:mb-0">
       <h2 className="text-lg text-themePurple sctm">Cards</h2>
       <div className="flex justify-between flex-nowrap mt-6 w-72">
@@ -32,7 +34,7 @@ const CardsHeading = () => (
         </svg>
       </button>
     </div>
-  </>
+  </motion.div>
 );
 
 export default CardsHeading;

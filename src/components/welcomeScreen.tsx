@@ -1,13 +1,15 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { item } from '../styles/motion';
 
 const WelcomeScreen = ({ close } : {close: Function}) => (
   <div className="w-full h-full py-4 lg:py-10 px-4">
-    <h2 className="text-center text-lg text-themePurple mb-6">
+    <motion.h2 variants={item} className="text-center text-lg text-themePurple mb-6">
       <span role="img" aria-label="greeting" className="text-sm"> 🙌🏽 </span>
       <br />
       Welcome to Wallets Business
-    </h2>
-    <div className="text-left text-sm text-dark border-t py-6">
+    </motion.h2>
+    <motion.div variants={item} className="text-left text-sm text-dark border-t py-6">
       <p className="mb-4">Hello,</p>
       <p className="mb-4">
         Thanks so much for signing up. We know how difficult it can be to set up
@@ -27,8 +29,8 @@ const WelcomeScreen = ({ close } : {close: Function}) => (
       </p>
       <p className="mb-4">Thanks!</p>
       <p>John Oke, CEO, Wallets Africa</p>
-    </div>
-    <div className="px-4 lg:px-14">
+    </motion.div>
+    <motion.div variants={item} className="px-4 lg:px-14">
       <button
         type="button"
         aria-label="close"
@@ -37,7 +39,7 @@ const WelcomeScreen = ({ close } : {close: Function}) => (
       >
         Show me awesome
       </button>
-    </div>
+    </motion.div>
   </div>
 );
 

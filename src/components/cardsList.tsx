@@ -1,8 +1,10 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { item } from '../styles/motion';
 import Verve from '../images/verve.png';
 
 const CardsList = ({ data }: {data: any[]}) => (
-  <div className="flex flex-wrap justify-between items-center flex-nowrap mt-10 mb-8 md:mb-0">
+  <motion.div variants={item} className="flex flex-wrap justify-between items-center flex-nowrap mt-10 mb-8 md:mb-0">
 
     {data.map((card) => (
       <div className="w-full" key={card.cardnumber}>
@@ -28,7 +30,7 @@ const CardsList = ({ data }: {data: any[]}) => (
       </div>
     ))}
 
-  </div>
+  </motion.div>
 );
 
 export default CardsList;
