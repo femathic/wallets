@@ -1,7 +1,7 @@
 import React, {
   Suspense, lazy, useState, useEffect,
 } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import swal from '@sweetalert/with-react';
 import SideNav from '../components/sideNav';
 import TopNav from '../components/topNav';
@@ -47,10 +47,8 @@ const Layout = ({ Loader }: { Loader: Function }) => {
               <Route path="/cards">
                 <Cards />
               </Route>
-              <Route exact path="/">
-                <Dashboard />
-              </Route>
-              <Route path="*" exact component={NotFound} />
+              <Redirect exact from="/" to="/dashboard" />
+              <Route exact path="*" component={NotFound} />
             </Switch>
           </Suspense>
         </div>
