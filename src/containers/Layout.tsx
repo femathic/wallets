@@ -41,13 +41,13 @@ const Layout = ({ Loader }: { Loader: Function }) => {
           <TopNav toggleShowSideNav={() => setShowSideNav(!showSideNav)} />
           <Suspense fallback={<Loader />}>
             <Switch>
+              <Redirect exact from="/" to="/dashboard" />
               <Route path="/dashboard">
                 <Dashboard />
               </Route>
               <Route path="/cards">
                 <Cards />
               </Route>
-              <Redirect exact from="/" to="/dashboard" />
               <Route exact path="*" component={NotFound} />
             </Switch>
           </Suspense>
