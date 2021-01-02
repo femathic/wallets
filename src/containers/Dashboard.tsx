@@ -17,7 +17,6 @@ const Dashboard = () => {
   const received: number = transactions.reduce((acc, next) => {
     if (next.transactiontype === 'cr') return acc + next.Amount;
     return acc;
-    
   }, 0);
 
   useEffect(() => window.scrollTo(0, 0), []);
