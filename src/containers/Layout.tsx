@@ -47,6 +47,7 @@ const Layout = ({ Loader }: { Loader: Function }) => {
               </Route>
               <Route path="/cards">
                 <Cards />
+                
               </Route>
               <Route exact path="*" component={NotFound} />
             </Switch>
