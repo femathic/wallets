@@ -7,7 +7,6 @@ import TransactionTable from '../components/transactionTable';
 import cardData from '../data/cards.json';
 
 const Dashboard = () => {
-  
   const transactions: Array<any> = [];
   const balance: number = cardData.reduce((acc, next) => acc + next.cardbalance, 0);
   cardData.map((data) => transactions.push(...data.Transactions));
@@ -18,6 +17,7 @@ const Dashboard = () => {
   const received: number = transactions.reduce((acc, next) => {
     if (next.transactiontype === 'cr') return acc + next.Amount;
     return acc;
+    
   }, 0);
 
   useEffect(() => window.scrollTo(0, 0), []);
