@@ -11,7 +11,6 @@ const Loader = () => (
 );
 
 const App = () => (
-  
   <Suspense fallback={<Loader />}>
     <Layout Loader={Loader} />
   </Suspense>
