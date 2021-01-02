@@ -7,6 +7,7 @@ import TransactionTable from '../components/transactionTable';
 import cardData from '../data/cards.json';
 
 const Dashboard = () => {
+  
   const transactions: Array<any> = [];
   const balance: number = cardData.reduce((acc, next) => acc + next.cardbalance, 0);
   cardData.map((data) => transactions.push(...data.Transactions));
